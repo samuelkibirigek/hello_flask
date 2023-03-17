@@ -1,5 +1,6 @@
 import time
 
+
 def delay_decorator(function):
     def wrapper_function():
         time.sleep(2)
@@ -20,6 +21,7 @@ def say_goodbye():
 
 def say_greeting():
     print("How are you!")
+
 
 say_hello()
 say_goodbye()
