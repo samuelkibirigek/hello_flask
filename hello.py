@@ -2,13 +2,16 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/bye")
+
+@app.route("/")
 def hello_world():
     return "<p>Hello, Worlds!</p>"
 
-@app.route("/")
+
+@app.route("/bye")
 def say_bye():
-    return "See you later!"
+    return "<p>See you later!</p>"
+
 
 if __name__ == "__main__":
     app.run()
